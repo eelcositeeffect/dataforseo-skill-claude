@@ -15,15 +15,10 @@ A Claude Code skill that provides complete DataForSEO API integration for SEO da
 
 ## Installation
 
-### Option 1: Quick Install (Recommended)
+### Option 1: Using skills.sh (Recommended)
 
 ```bash
-# Clone the repository
-git clone https://github.com/nikhilbhansali/dataforseo-skill-claude.git
-
-# Run the install script
-cd dataforseo-skill-claude
-./install.sh
+npx skills.sh install nikhilbhansali/dataforseo-skill-claude
 ```
 
 ### Option 2: Manual Install
