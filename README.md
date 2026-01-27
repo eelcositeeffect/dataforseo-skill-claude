@@ -19,7 +19,7 @@ A Claude Code skill that provides complete DataForSEO API integration for SEO da
 
 ```bash
 # Clone the repository
-git clone https://github.com/YOUR_USERNAME/dataforseo-skill-claude.git
+git clone https://github.com/nikhilbhansali/dataforseo-skill-claude.git
 
 # Run the install script
 cd dataforseo-skill-claude
