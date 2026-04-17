@@ -27,7 +27,7 @@ if [ -d ~/.agents/skills/dataforseo ] && [ -L ~/.claude/skills/dataforseo ]; the
     echo ""
     echo "Next steps:"
     echo "1. Restart Claude Code"
-    echo "2. Set up your DataForSEO API credentials (see README.md)"
+    echo "2. Add your DataForSEO API credentials to your .zshrc (see README.md)"
     echo ""
     echo "Get your API credentials at: https://app.dataforseo.com/"
 else

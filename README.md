@@ -44,9 +44,11 @@ import sys, os
 sys.path.insert(0, os.path.expanduser('~/.agents/skills/dataforseo/scripts'))
 from dataforseo_client import save_credentials, verify_credentials
 
-# Get your credentials from https://app.dataforseo.com/
-login = "your_email@example.com"
-password = "your_api_password"
+# Get your credentials from your environment (e.g. set in .zshrc)
+# export DATAFORSEO_USERNAME="your_email@example.com"
+# export DATAFORSEO_PASSWORD="your_api_password"
+login = os.environ.get("DATAFORSEO_USERNAME")
+password = os.environ.get("DATAFORSEO_PASSWORD")
 
 if verify_credentials(login, password):
     save_credentials(login, password)
@@ -65,7 +67,7 @@ from dataforseo_client import keywords_search_volume, extract_results, to_csv
 # Get search volume for keywords
 response = keywords_search_volume(
     keywords=["seo tools", "keyword research"],
-    location_name="United States"
+    location_name="The Netherlands"
 )
 results = extract_results(response)
 csv_path = to_csv(results, "keyword_volumes")
